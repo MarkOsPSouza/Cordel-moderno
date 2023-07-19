@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url(fonts/Sriracha-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'Caprasimo';
+    src: url(fonts/Caprasimo-Regular.ttf) format(truetype);
+}
+:root {
+    --font1: 'Times New Roman', Times, serif;
+    --font2: 'Caprasimo';
+    --font3: 'Sriracha';
+}   
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: rgb(121, 118, 118);
+    font-family: var(--font1);
+}
+
+header{
+background-color: black;
+color: white;
+text-align: center;
+}
+header h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 3em;
+    font-family: var(--font2)
+}
+header p{
+    padding-bottom: 50px;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.5em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 1.1em;
+}
+section.imagem > p {
+    background-color: rgba(165, 165, 165, 0.199);
+    text-shadow: 1px 1px 1px black;
+    width: 400px;
+    font-size: 1.1em;
+}
+section > p {
+    padding-bottom: 1em;
+}
+section.normal{
+background-color: white;
+color: black;
+}
+section.imagem{
+    background-color: black;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.671);
+    background-attachment: fixed;
+}
+section#img1{
+background-image: url(imagens/background001.jpg);
+background-position: left center;
+background-size: cover;
+}
+section#img2{
+background-image: url(imagens/background002.jpg);
+background-position: left center;
+background-size: cover;
+}
+footer{
+ background-color: black;
+color: white;
+ text-align: center;
+ padding: 5px;
+}
